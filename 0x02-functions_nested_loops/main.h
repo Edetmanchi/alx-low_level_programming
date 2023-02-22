@@ -15,9 +15,5 @@ int add(int, int);
 int add(int, int);
 	
 	
-	
-	
-	
-	
-	;
+
 #endif
