@@ -1,17 +1,13 @@
-#include <stdlib.h>
+#include <unistd.h>
 
 /**
- * malloc_checked - Allocates memory using malloc.
- * @b: The number of bytes to be allocated.
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- * Return: A pointer to the allocated memory.
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-void *malloc_checked(unsigned int b)
+int _putchar(char c)
 {
-	void *mem = malloc(b);
-
-	if (mem == NULL)
-		exit(98);
-
-	return (mem);
+	return (write(1, &c, 1));
 }
